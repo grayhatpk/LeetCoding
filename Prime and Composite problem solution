@@ -1,0 +1,17 @@
+import random 
+
+numbers=[random.randint(1,100) for _ in range(10)] # random numbers 
+
+prime_number=[] # List for storing the prime numbers 
+composite=[]   # list for storing the composite numbers
+
+for i in range(len(numbers)):
+    
+    if(numbers[i] % 2 ==0 or numbers[i] % 3 == 0 or numbers[i] % 5 == 0 or numbers[i] % 7 == 0 or numbers[i] % 9 == 0 ):
+        prime_number.append(numbers[i]) 
+    else:
+        composite.append(numbers[i])
+    
+print(prime_number)
+print(composite)
+           
